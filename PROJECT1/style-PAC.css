@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.topbar {
+    display: flex;
+    justify-content: end;
+    padding: 5px 20px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+
+
+}
+
+.topbar span {
+    margin-left: 5px;
+    font-weight: 400;
+    margin-right: 0;
+    font-size: smaller;
+
+}
+
+.topbar i {
+    margin-left: 20px;
+    color: white;
+}
+
+.topbar {
+    background-color: #073980;
+}
+
+.navbar img {
+    width: 250px;
+    z-index: 2;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+header {
+    color: white;
+    height: 60vh;
+    background: url('/images/background-PAC.png')center center/cover no-repeat;
+    position: relative;
+
+}
+
+
+header .navbar,
+header .intro {
+    position: relative;
+    z-index: 2;
+
+}
+
+header .intro a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    padding: 20px 20px;
+    color: grey;
+}
+
+
+.navbar ul li button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    color: white;
+    background-color: #b22222;
+
+}
+
+.navbar ul li a:hover {
+    color: #b22222;
+}
+
+
+.navbar ul li button i {
+    margin-left: 10px;
+}
+
+header .intro {
+    padding-left: 200px;
+    margin-top: 120px;
+}
+
+header .intro a {
+    color: #b22222;
+}
+
+header .intro h1 {
+    color: #073980;
+    font-size: 40px;
+}
+
+#PAC {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+#PAC .content-PAC .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#PAC .content-PAC .title h3 {
+    color: #b22222;
+    margin-bottom: 10px;
+    font-size: 40px;
+
+}
+
+#PAC .content-PAC .title h6 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#PAC .content-PAC .title p {
+    font-size: 10px;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+#PAC .info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+#PAC .info .image1 img {
+    width: 380px;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+#PAC .info .infoo1 h2 {
+    color: #b22222;
+    margin-bottom: 20px;
+}
+
+#PAC .info .infoo1 p {
+    font-size: 11px;
+    line-height: 25px;
+}
+
+
+#PAC .info .image2 img {
+    width: 380px;
+    border-radius: 10px;
+    margin-right: 80px;
+}
+
+#PAC .info .infoo2 h2 {
+    color: #b22222;
+    margin-bottom: 20px;
+}
+
+#PAC .info .infoo2 p {
+    font-size: 11px;
+    line-height: 25px;
+}
+
+
+#contact {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 230px;
+    background-color: rgb(181, 211, 231);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#contact .content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact .content-contact .title h1 {
+    margin-bottom: 10px;
+    color: #073980;
+    font-size: 45px;
+}
+
+
+
+#contact .content-contact .title p {
+    line-height: 25px;
+    color: #073980;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+
+#contact .content-contact .buttons .contact-btn,
+#contact .content-contact .buttons .call-btn {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#contact .content-contact .buttons .contact-btn {
+    color: black;
+}
+
+#contact .content-contact .buttons .call-btn {
+    background-color: #073980;
+    color: white;
+}
+
+#presentaions {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#presentations .content-presentations .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#presentations .content-presentations .title h3 {
+    color: #b22222;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#presentations .content-presentations .title p {
+    font-size: 10px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+#presentations .content-presentations .presentations3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#presentations .content-presentations .presentations3 .presentation {
+    overflow: hidden;
+    color: white;
+    align-items: flex-start;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 22px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 230px;
+    padding: 30px;
+}
+
+#presentations .content-presentations .presentations3 .presentation .icon img {
+    width: 90px;
+
+}
+
+#presentations .content-presentations .presentations3 .presentation .infoo a {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#devis {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 230px;
+    background-color: rgb(181, 211, 231);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#devis .content-devis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#devis .content-devis .title h1 {
+    margin-bottom: 10px;
+    color: #073980;
+    font-size: 45px;
+}
+
+#devis .content-devis .title p {
+    line-height: 25px;
+    color: #073980;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+
+#devis .content-devis .button button {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #073980;
+
+}
+
+footer {
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 65vh;
+    background-color: #073980;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+footer .infoo {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+
+footer img {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+footer .infoo p {
+    font-size: 10px;
+    margin-right: 0;
+    margin-bottom: 11px;
+ 
+
+}
+
+footer .links div {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+footer .infoo i {
+    margin-right: 5px;
+    font-size: 15px;
+
+}
+
+footer .infoo li a,
+footer .infoo p {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    font-size: 8px;
+    margin-bottom: 10px;
+
+}
+
+footer .infoo .title {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+footer .infoo .reseaux i {
+    font-size: 25px;
+    display: inline;
+    padding: 5px;
+}
+
+footer hr {
+    opacity: 0.1;
+}
+
+footer .links .copyright {
+    margin-top: 30px;
+    display: flex;
+    font-size: 8px;
+}
+
+footer .links .copyright .white {
+    margin-right: 50px;
+}
+
+footer .links .copyright .lightblue {
+    color: lightskyblue;
+}

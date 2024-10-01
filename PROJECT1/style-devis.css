@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.topbar {
+    display: flex;
+    justify-content: end;
+    padding: 5px 20px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+
+
+}
+
+.topbar span {
+    margin-left: 5px;
+    font-weight: 400;
+    margin-right: 0;
+    font-size: smaller;
+
+}
+
+.topbar i {
+    margin-left: 20px;
+    color: white;
+}
+
+.topbar {
+    background-color: #073980;
+}
+
+.navbar img {
+    width: 250px;
+    z-index: 2;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+header {
+    color: white;
+    height: 60vh;
+    background: url('/images/background-devis.png')center center/cover no-repeat;
+    position: relative;
+
+}
+
+
+header .navbar,
+header .intro {
+    position: relative;
+    z-index: 2;
+
+}
+
+header .intro a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    padding: 20px 20px;
+    color: grey;
+}
+
+
+.navbar ul li button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    color: white;
+    background-color: #b22222;
+
+}
+
+.navbar ul li a:hover {
+    color: #b22222;
+}
+
+
+.navbar ul li button i {
+    margin-left: 10px;
+}
+
+header .intro {
+    padding-left: 200px;
+    margin-top: 120px;
+}
+
+header .intro a {
+    color: #b22222;
+}
+
+header .intro h1 {
+    color: #073980;
+    font-size: 40px;
+}
+
+#content {
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-top: 50px;
+    display: flex;
+    align-items: top;
+
+}
+
+#content .form {
+    margin-right: 50px;
+}
+
+#content .info {
+    margin-top: 35px;
+    display: inline;
+    align-items: center;
+}
+
+#content .info h6 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: rgb(65, 65, 65);
+    margin-top: 25px;
+}
+
+#content i {
+    color: black;
+    margin-right: 10px;
+}
+
+#content .info p {
+    color: rgb(69, 68, 68);
+    margin-bottom: 3px;
+}
+
+#content .form h1 {
+    font-size: 30px;
+    color: #b22222;
+    padding-bottom: 30px;
+
+
+}
+
+#content .form p {
+    padding-bottom: 30px;
+    color: rgb(158, 155, 155);
+    width: 80vh;
+}
+
+
+#adress,
+#codepostal {
+    border: none;
+    border-bottom: solid;
+    margin-bottom: 40px;
+    color: rgb(158, 155, 155);
+
+}
+
+#adress {
+    width: 52vh;
+}
+
+#codepostal {
+    width: 27vh;
+}
+
+#fullname,
+#choices,
+#phone,
+#email {
+    border: none;
+    border-bottom: solid;
+    width: 80vh;
+    margin-bottom: 40px;
+    color: rgb(158, 155, 155);
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#adress,
+#codepostal {
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: solid;
+    color: rgb(158, 155, 155);
+    height: 50px;
+
+
+
+}
+
+form label {
+    color: rgb(158, 155, 155);
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+form :placeholder-shown {
+    padding-left: 20px;
+    color: rgb(158, 155, 155);
+    padding-top: 15px;
+
+}
+
+form select option {
+    padding-left: 20px;
+    color: rgb(158, 155, 155);
+}
+
+#message {
+    margin-top: 10px;
+    border: solid;
+    border-radius: 10px;
+    width: 80vh;
+    margin-bottom: 40px;
+    height: 200px;
+    color: rgb(158, 155, 155);
+}
+
+#content .form .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #aaa;
+    text-align: center;
+    margin-top: 8px;
+    height: 100px;
+    width: 80vh;
+}
+#content .form .container label{
+text-align: center;
+
+}
+#content .form .container i{
+    color: #aaa;
+}
+
+#file {
+    display: none;
+}
+
+
+
+
+#savedata {
+    margin-top: 20px;
+}
+
+form button {
+    background-color: rgb(38, 192, 38);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    width: 80vh;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+footer {
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 65vh;
+    background-color: #073980;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+
+
+}
+
+footer .infoo {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+
+footer img {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+footer .infoo p {
+    font-size: 10px;
+    margin-right: 0;
+    margin-bottom: 11px;
+
+}
+
+footer .links div {
+    flex: 1;
+    /* Makes all child divs take equal width */
+    margin: 0 10px;
+    text-align: center;
+}
+
+footer .infoo i {
+    margin-right: 5px;
+    font-size: 15px;
+
+}
+
+footer .infoo li a,
+footer .infoo p {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    font-size: 8px;
+    margin-bottom: 10px;
+
+}
+
+footer .infoo .title {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+footer .infoo .reseaux i {
+    font-size: 25px;
+    display: inline;
+    padding: 5px;
+}
+
+footer hr {
+    opacity: 0.1;
+}
+
+footer .links .copyright {
+    margin-top: 30px;
+    display: flex;
+    font-size: 8px;
+}
+
+footer .links .copyright .white {
+    margin-right: 50px;
+}
+
+footer .links .copyright .lightblue {
+    color: lightskyblue;
+}
+

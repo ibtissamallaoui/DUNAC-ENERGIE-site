@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.topbar {
+    display: flex;
+    justify-content: end;
+    padding: 5px 20px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+
+
+}
+
+.topbar span {
+    margin-left: 5px;
+    font-weight: 400;
+    margin-right: 0;
+    font-size: smaller;
+
+}
+
+.topbar i {
+    margin-left: 20px;
+    color: white;
+}
+
+.topbar {
+    background-color: #073980;
+}
+
+.navbar img {
+    width: 250px;
+    z-index: 2;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+header {
+    color: white;
+    height: 60vh;
+    background: url('/images/background-presentations.png')center center/cover no-repeat;
+    position: relative;
+
+}
+
+
+header .navbar,
+header .intro {
+    position: relative;
+    z-index: 2;
+
+}
+
+header .intro a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    padding: 20px 20px;
+    color: grey;
+}
+
+
+.navbar ul li button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    color: white;
+    background-color: #b22222;
+
+}
+
+.navbar ul li a:hover {
+    color: #b22222;
+}
+
+
+.navbar ul li button i {
+    margin-left: 10px;
+}
+
+header .intro {
+    padding-left: 200px;
+    margin-top: 120px;
+}
+
+header .intro a {
+    color: #b22222;
+}
+
+header .intro h1 {
+    color: #073980;
+    font-size: 40px;
+}
+
+#nos-offres {
+
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 50px;
+    height: 85vh;
+    background-color: rgba(244, 239, 239, 0.927);
+}
+
+#nos-offres .title img {
+    width: 150px;
+
+}
+
+#nos-offres .title h1 {
+    color: #b22222;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#nos-offres .title p {
+    font-weight: 500;
+    font-size: 12px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+#nos-offres .offres {
+    display: inline-flex;
+}
+
+#nos-offres .offre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 22px;
+    width: 220px;
+    height: 230px;
+    padding: 30px;
+
+}
+
+
+#nos-offres .offre .infoo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nos-offres .offre .infoo h3 {
+    color: #b22222;
+    margin-bottom: 5px;
+}
+
+#nos-offres .offre .infoo a {
+    color: #073980;
+    font-size: 11px;
+}
+
+
+
+#nos-offres .offres .icon img {
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+#qualifications-section {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 50px;
+    height: 65vh;
+}
+
+#qualifications-section .title h1 {
+    color: #b22222;
+    font-size: 35px;
+    margin-bottom: 10px;
+
+
+}
+
+
+#qualifications-section .qualifications .qualification .infoo  h6{
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3765a4;
+    font-weight: 600;
+}
+#qualifications-section .qualifications .qualification .infoo  p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#qualifications-section .qualifications .qualification .icon img {
+    width: 100px;
+    display: flex;
+margin-right: 180px;}
+
+#qualifications-section .qualifications .qualification {
+    width: 290px;
+    height: 300px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(244, 246, 247);
+    box-shadow: 0px 4px 8px rgb(123, 123, 123);
+    border-radius: 10px;
+    margin-right: 22px;
+    padding: 30px;
+
+}
+
+form button{
+    background-color: rgb(38, 192, 38);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    width: 80vh;
+    height: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+
+footer{
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 65vh;
+    background-color: #073980;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+footer .infoo{
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+footer img{
+    width: 100px;
+    display: flex;
+    justify-content: left;
+align-items: start;
+margin-bottom: 10px;
+}
+footer .infoo p{
+    font-size: 10px;
+    margin-right: 0;
+    margin-bottom: 11px;
+
+}
+footer .links div {
+    flex: 1; /* Makes all child divs take equal width */
+    margin: 0 10px;
+    text-align: center;
+}
+footer .infoo i{
+    margin-right: 5px;
+    font-size: 15px;
+    
+}
+
+footer .infoo li a,footer .infoo p{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    font-size: 8px;
+    margin-bottom: 10px;
+
+}
+footer .infoo .title{
+    font-size: 30px;
+    font-weight:100;
+    margin-bottom: 20px;
+}
+footer .infoo .reseaux i{
+    font-size: 25px;
+    display: inline;
+    padding: 5px;
+}
+footer hr{
+    opacity: 0.1;
+}
+
+footer .links .copyright {
+margin-top: 30px;
+display: flex;
+font-size: 8px;
+}
+footer .links .copyright .white{
+    margin-right: 50px;
+}
+footer .links .copyright .lightblue{
+    color: lightskyblue;
+}
+

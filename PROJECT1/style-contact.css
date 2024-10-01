@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.topbar {
+    display: flex;
+    justify-content: end;
+    padding: 5px 20px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+
+
+}
+
+.topbar span {
+    margin-left: 5px;
+    font-weight: 400;
+    margin-right: 0;
+    font-size: smaller;
+
+}
+
+.topbar i {
+    margin-left: 20px;
+    color: white;
+}
+
+.topbar {
+    background-color: #073980;
+}
+
+.navbar img {
+    width: 250px;
+    z-index: 2;
+    margin-left: 18px;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+header {
+    color: white;
+    height: 60vh;
+    background: url('/images/background-contact.png')center center/cover no-repeat;
+    position: relative;
+
+}
+
+
+header .navbar,
+header .intro {
+    position: relative;
+    z-index: 2;
+
+}
+
+header .intro a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    padding: 20px 20px;
+    color: grey;
+}
+
+
+.navbar ul li button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-left: 50px;
+    color: white;
+    background-color: #b22222;
+
+}
+
+.navbar ul li a:hover {
+    color: #b22222;
+}
+
+
+.navbar ul li button i {
+    margin-left: 10px;
+}
+
+header .intro {
+    padding-left: 200px;
+    margin-top: 120px;
+}
+
+header .intro a {
+    color: #b22222;
+}
+
+header .intro h1 {
+    color: #073980;
+    font-size: 40px;
+}
+
+
+
+
+#contact{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    margin-bottom: 80px;
+  
+ 
+}
+#contact .title h5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+#contact .contact-section{
+    margin-top: 20px;
+    background-color: rgb(181, 211, 231);
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    height: 420px;
+}
+
+#name, #email{   
+     padding-left: 10px;
+    height: 50px;
+    width: 460px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 45px;
+    
+
+}
+#message{
+    margin-right: 45px;
+    height: 100px;
+    width: 460px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+
+form .savedata{
+font-size: 11px;
+line-height: 2px;
+color: #073980;
+margin-right: 45px;
+
+}
+
+form button{
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #073980;
+    font-size: 13px;
+    height: 45px;
+    text-transform: uppercase;
+    margin-right: 45px;
+
+    
+
+}
+#contact .contact-section .infoo .title h5{
+
+color:#073980;
+font-size: 35px;
+font-weight: 400;
+padding-bottom: 15px;
+}
+#contact .contact-section .infoo .title p{
+color:#073980;
+font-size: 13px;
+font-weight: 500;
+padding-bottom: 20px;
+text-transform: uppercase;
+display: flex;
+}
+#contact .contact-section .infoo .title i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+
+#map .location {
+    width: 100vw;
+    height: 500px;
+}
+iframe{
+    width:100%;
+     height:500px;
+}
+
+
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 180px;
+    padding-right: 130px;
+    padding-left: 130px;
+    height: 65vh;
+    background-color: #073980;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+
+
+}
+
+footer .infoo {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 200px;
+}
+
+footer img {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+footer .infoo p {
+    font-size: 10px;
+    margin-right: 0;
+    margin-bottom: 11px;
+
+}
+
+footer .links div {
+    flex: 1;
+    /* Makes all child divs take equal width */
+    margin: 0 10px;
+    text-align: center;
+}
+
+footer .infoo i {
+    margin-right: 5px;
+    font-size: 15px;
+
+}
+
+footer .infoo li a,
+footer .infoo p {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    font-size: 8px;
+    margin-bottom: 10px;
+
+}
+
+footer .infoo .title {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+footer .infoo .reseaux i {
+    font-size: 25px;
+    display: inline;
+    padding: 5px;
+}
+
+footer hr {
+    opacity: 0.1;
+}
+
+footer .links .copyright {
+    margin-top: 30px;
+    display: flex;
+    font-size: 8px;
+}
+
+footer .links .copyright .white {
+    margin-right: 50px;
+}
+
+footer .links .copyright .lightblue {
+    color: lightskyblue;
+}
+
+
